@@ -72,6 +72,9 @@
                                 aria-controls="collapseExample">
                                 <i class="fa fa-search"></i>
                             </a>
+                            <span class="ml-2 btn-account" role="button" data-toggle="modal" data-target="#login-modal">
+                                <i class="fa fa-user"></i>
+                                ورود</span>
                         </div><!-- end search -->
                     </div><!-- end col -->
 
@@ -120,10 +123,12 @@
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: center !important;">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown"
+                        style="justify-content: center !important;">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">صفحه اصلی <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">صفحه اصلی <span
+                                        class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="category.html">گالری تصاویر</a>
@@ -590,9 +595,113 @@
             </div><!-- end container -->
         </footer><!-- end footer -->
 
+
+
+
         <div class="dmtop"></div>
 
     </div><!-- end wrapper -->
+
+    <!-- BEGIN # MODAL LOGIN -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" align="center">
+                    <img class="img-circle" id="img_logo" src="images/favicon.png">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="fa fa-close"></span>
+                    </button>
+                </div>
+
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+
+                    <!-- Begin # Login Form -->
+                    <form id="login-form" class="form-wrapper">
+                        <div class="modal-body">
+                            <div id="div-login-msg">
+                                <div id="icon-login-msg" class="fa fa-chevron-left"></div>
+
+                                <span id="text-login-msg">نام کاربری و رمز را وارد کنید!</span>
+                            </div>
+                            <input id="login_username" class="form-control" type="text" placeholder="نام کاربری"
+                                required>
+                            <input id="login_password" class="form-control" type="password" placeholder="رمز عبور"
+                                required>
+                            <div class="checkbox mt-2">
+                                <label>
+                                    <input type="checkbox"> مرا به خاطر بسپار
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="w-100">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">ورود</button>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer pt-0">
+                            <a id="login_register_btn" class="">ثبت نام</a>
+                            <a id="login_lost_btn" class="">فراموشی رمز عبور</a>
+                        </div>
+                    </form>
+                    <!-- End # Login Form -->
+
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;" class="form-wrapper">
+                        <div class="modal-body">
+                            <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="fa fa-chevron-left"></div>
+                                <span id="text-lost-msg">برای بازیابی رمز ایمیل خود را وارد کنید!</span>
+                            </div>
+                            <input id="lost_email" class="form-control" type="text" placeholder="ایمیل" required>
+                        </div>
+                        <div class="modal-footer pt-0">
+                            <div class="w-100">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">ارسال</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer pt-0">
+                            <a id="lost_login_btn" class="">ورود</a>
+                            <a id="lost_register_btn" class="">ثبت نام</a>
+                        </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;" class="form-wrapper">
+                        <div class="modal-body">
+                            <div id="div-register-msg">
+                                <div id="icon-register-msg" class="fa fa-chevron-left"></div>
+                                <span id="text-register-msg">ثبت نام در سایت!</span>
+                            </div>
+                            <input id="register_username" class="form-control" type="text"
+                                placeholder="نام کاربری" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="ایمیل" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="رمز عبور"
+                                required>
+                        </div>
+                        <div class="modal-footer pt-0">
+                            <div class="w-100">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">ثبت نام</button>
+                            </div>                            
+                        </div>
+                        <div class="modal-footer pt-0">
+                            <a id="register_login_btn" class="">ورود</a>
+                            <a id="register_lost_btn" class="">فراموشی رمز عبور</a>
+                        </div>
+                    </form>
+                    <!-- End | Register Form -->
+
+                </div>
+                <!-- End # DIV Form -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END # MODAL LOGIN -->
+
 
     <!-- Core JavaScript
     ================================================== -->
