@@ -161,14 +161,13 @@
         <section class="section wb">
             <div class="container">
                 <div class="row">
-                    <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
+                    <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-4">
                         <div align="center">
-                            <button class="btn btn-default filter-button" data-filter="all">همه</button>
-                            <button class="btn btn-default filter-button" data-filter="hdpe">دورهمی‌ها</button>
-                            <button class="btn btn-default filter-button" data-filter="sprinkle">جشن‌ها</button>
-                            <button class="btn btn-default filter-button" data-filter="spray">تکنولوژی</button>
-                            <button class="btn btn-default filter-button" data-filter="irrigation">سایر</button>
+                            <button class="btn btn-primary" data-filter="all">همه</button>
+                            <button class="btn btn-primary" data-filter="hdpe">دورهمی‌ها</button>
+                            <button class="btn btn-primary" data-filter="sprinkle">جشن‌ها</button>
+                            <button class="btn btn-primary" data-filter="spray">تکنولوژی</button>
+                            <button class="btn btn-primary" data-filter="irrigation">سایر</button>
                         </div>
                     </div>
                     <br>
@@ -290,7 +289,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            $(".filter-button").click(function () {
+            $(".btn-primary").click(function () {
                 var value = $(this).attr('data-filter');
 
                 if (value == "all") {
@@ -306,7 +305,7 @@
                 }
             });
 
-            if ($(".filter-button").removeClass("active")) {
+            if ($(".btn-primary").removeClass("active")) {
                 $(this).removeClass("active");
             }
             $(this).addClass("active");
