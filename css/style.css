@@ -2038,8 +2038,8 @@ input[type="password"] {
 .job-title small{
   margin-right: 5px;
 }
-.cat{
-  display: inline-block;
+.cat-pos{
+  margin-right: 10px;
 }
 .plus-cat{
   color: #fec000;
