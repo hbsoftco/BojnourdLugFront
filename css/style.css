@@ -2038,3 +2038,11 @@ input[type="password"] {
 .job-title small{
   margin-right: 5px;
 }
+.cat{
+  display: inline-block;
+}
+.plus-cat{
+  color: #fec000;
+  font-size: 30px;
+  padding-top: 20%;
+}
