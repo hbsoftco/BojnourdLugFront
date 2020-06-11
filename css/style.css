@@ -1981,7 +1981,6 @@ input[type="password"] {
   color: white;
 }
 
-<<<<<<< HEAD
 /* style form about */
 .about-text p{
   text-align: justify;
@@ -2016,11 +2015,9 @@ input[type="password"] {
   color: #fec000;
 }
 
-=======
 .port-image {
   width: 100%;
 }
->>>>>>> 268433c3ae71eb08218dde3367481ad54c31457f
 
 .gallery_product {
   margin-bottom: 30px;
