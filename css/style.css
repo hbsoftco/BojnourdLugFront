@@ -2040,9 +2040,9 @@ input[type="password"] {
 }
 .cat-pos{
   margin-right: 10px;
+  display: inline-block;
 }
 .plus-cat{
   color: #fec000;
   font-size: 30px;
-  padding-top: 20%;
 }
