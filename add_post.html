@@ -23,9 +23,8 @@
 
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-select.min.css" rel="stylesheet">
-<link href="css/bootstrap-select.css" rel="stylesheet">
-<link href="css/bootstrap-select.css.map" rel="stylesheet">
+<link rel="stylesheet" href="css/BsMultiSelect.css" type="text/css" />
+
 <!-- Custom font -->
 <link href="css/fonts.css" rel="stylesheet">
 
@@ -153,67 +152,78 @@
             <div class="container">
                 <div class="row">
 
-                    
+
                     <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-lg-3 offset-sm-3 offset-xs-3 offset-md-3">
-                        <div class="page-wrapper" >
+                        <div class="page-wrapper">
                             <div class="blog-list clearfix">
-                                
+
                                 <div class="col-md-9">
                                     <div class="profile-content">
-                                       <form action="" method="POST" id="form-user" class="form-wrapper">
+                                        <form action="" method="POST" id="form-user" class="form-wrapper">
                                             <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
                                                 <h4>افزودن پست جدید</h4>
                                             </div>
-                                           <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-                                              
-                                               <input type="text" class="form-control user" name="user" placeholder="عنوان">
-                                           </div>
-                                           <div class="row">
-                                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12" >
+                                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+
+                                                <input type="text" class="form-control user" name="user"
+                                                    placeholder="عنوان">
+                                            </div>
+                                            <div class="row">
                                                 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-                                                    <textarea name="about" class="form-control" placeholder="متن"></textarea>
-                                                </div>
-                                                   <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12" style="float: right;">
-                                                    <div class="box" style="margin-left: 10%;">
-                                                        <div class="hidden" style="display: none;">
-                                                            <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} فایل انتخاب شد." multiple />
-                                                        </div>
-                                                        <label for="file-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>بارگذاری عکس  </span></label>
+                                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                                        <textarea name="about" class="form-control"
+                                                            placeholder="متن"></textarea>
                                                     </div>
-                                                 </div>
-                                               </div>
-                                           </div>
-                                          
-                                           <div class="row" class="cat-row">
-                                           <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 cat-pos">
-                                            <select class="selectpicker">
-                                                <option>Mustard</option>
-                                                <option>Ketchup</option>
-                                                <option>Barbecue</option>
-                                              </select>
-                                              
-                                              
-                                           </div>
-                                           <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 cat">
-                                            <i class="fa fa-plus-square plus-cate" aria-hidden="true"></i>
+                                                    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12"
+                                                        style="float: right;">
+                                                        <div class="box" style="margin-left: 10%;">
+                                                            <div class="hidden" style="display: none;">
+                                                                <input type="file" name="file-2[]" id="file-2"
+                                                                    class="inputfile inputfile-2"
+                                                                    data-multiple-caption="{count} فایل انتخاب شد."
+                                                                    multiple />
+                                                            </div>
+                                                            <label for="file-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    width="20" height="17" viewBox="0 0 20 17">
+                                                                    <path
+                                                                        d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z" />
+                                                                </svg> <span>بارگذاری عکس </span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+
+                                            <div class="row" class="cat-row">
+                                                <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 cat-pos">
+                                                    <select name="states" id="select_cat"
+                                                        multiple="multiple" style="display: none;">
+                                                        <option value="AL">Alabama</option>
+                                                        <option value="AK">Alaska</option>
+                                                        <option value="AZ">Arizona</option>
+                                                        <option value="AR">Arkansas</option>
+                                                        <option selectedvalue="CA">California</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 cat">
+                                                    <i class="fa fa-plus-square plus-cate" aria-hidden="true"></i>
+                                                </div>
                                             </div>
-                                           <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-                                            <button type="submit" class="btn btn-primary"><i
-                                                class="fa fa-save"></i> ثبت</button>                                           </div>
-                                       </form>
+                                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>
+                                                    ثبت</button> </div>
+                                        </form>
                                     </div>
                                 </div>
-                    
 
-                              
+
+
                             </div><!-- end blog-list -->
                         </div><!-- end page-wrapper -->
 
 
                     </div><!-- end col -->
 
-                
+
                 </div><!-- end row -->
             </div><!-- end container -->
         </section>
@@ -276,18 +286,26 @@
 
     </div><!-- end wrapper -->
 
-   
+
     <!-- Core JavaScript
     ================================================== -->
     <script type="text/javascript"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-select.js.map"></script>
-    <script src="js/bootstrap-select.min.js.map"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="js/BsMultiSelect.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#select_cat").bsMultiSelect();
+        });
+    </script>
 
 </body>
 
