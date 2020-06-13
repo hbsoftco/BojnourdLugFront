@@ -2046,3 +2046,7 @@ input[type="password"] {
   font-size: 30px;
   padding-top: 0px !important;
 }
+
+.pointer{
+  cursor: pointer;
+}
